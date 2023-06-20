@@ -1,0 +1,185 @@
+@import url(//db.onlinewebfonts.com/c/f02cf2e6e27a17bcfe9efa18c041c208?family=Redcollar);
+@import url(//fonts.cdnfonts.com/css/tt-commons);
+
+* {
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Redcollar", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  min-height: 100vh;
+  overflow: auto;
+  background-color: #000;
+  padding: 40px;
+  position: relative;
+  display: flex;
+  column-gap: 32px;
+  font-family: 'TT Commons', sans-serif;
+  color: #fff;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.logo{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  right: 40px;
+  top: 30px;
+  column-gap: 7px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+}
+
+.image-wrapper {
+  height: 355px;
+  background-color: #777;
+}
+
+.info-block {
+  flex-grow: 1;
+  margin-top: -24px;
+  height: 500px;
+  background-color: #F51B1B;
+  border-radius: 24px 24px 0px 0px;
+  padding: 40px 24px;
+}
+
+.info-block__name {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 8px;
+}
+
+.info-block__text {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.links-container {
+  margin-top: 40px;
+}
+
+.info-link{
+  display: flex;
+  column-gap: 14px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.main__description{
+  margin-top: 18px;
+  max-width: 690px;
+}
+
+.main__inform{
+  border: 1px #fff solid;
+  flex-grow: 1;
+  padding: 27px;
+  margin-top: 33px;
+}
+
+.inform-item{
+  padding: 20px 0;
+  display: flex;
+  column-gap: 72px;
+}
+
+.inform-item:not(:first-child){
+  border-top: 1px #fff solid;
+}
+
+.inform-item__title{
+  font-size: 16px;
+  line-height: 100%;
+  font-weight: 400;
+  width: 124px;
+}
+.text-block{
+  letter-spacing: -0.01em;
+}
+.text-block:not(:first-of-type){
+  margin-top: 8px;
+}
+
+.text-block__text{
+  opacity: 0.4;
+}
+
+.skills{
+  display: flex;
+  column-gap: 33px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .logo{
+    position: static;
+    margin-bottom: 52px;
+  }
+  .container{
+    flex-direction: column;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 23px 20px 60px;
+  }
+  .profile{
+    width: 100%;
+  }
+  .info-block{
+    height: auto;
+    padding: 17px 24px;
+  }
+  .info-block__name{
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .info-block__text{
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .main__description{
+    margin-top: 40px;
+  }
+  .main__inform{
+    padding: 15px;
+    margin-top: 25px;
+  }
+  .inform-item__title{
+    width: auto;
+    margin-bottom: 16px;
+  }
+  .inform-item{
+    flex-direction: column;
+  }
+  .skills{
+    column-gap: 16px;
+  }
+}
