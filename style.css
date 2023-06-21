@@ -22,7 +22,7 @@ a {
   text-decoration: none;
 }
 
-.container {
+.wrapper {
   min-height: 100vh;
   overflow: auto;
   background-color: #000;
@@ -36,7 +36,7 @@ a {
   line-height: 24px;
 }
 
-.logo{
+.header{
   position: absolute;
   display: flex;
   align-items: center;
@@ -48,43 +48,63 @@ a {
 .profile {
   display: flex;
   flex-direction: column;
-  width: 320px;
+  max-width: 322px;
+  width: 100%;
 }
 
-.image-wrapper {
+.profile__image-wrapper {
   height: 355px;
-  background-color: #777;
+  position: relative;
 }
 
-.info-block {
+.profile-image{
+  object-fit: cover;
+}
+
+.glasses{
+  position: absolute;
+  left: 78px;
+  top: 96px;
+  transform: rotate(23deg) scale(1.2);
+}
+
+.about-block {
   flex-grow: 1;
   margin-top: -24px;
   height: 500px;
   background-color: #F51B1B;
   border-radius: 24px 24px 0px 0px;
   padding: 40px 24px;
+  position: relative;
+  z-index: 1;
 }
 
-.info-block__name {
+.red-arrow{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+
+.about-block__name {
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
   margin-bottom: 8px;
 }
 
-.info-block__text {
+.about-block__text {
   font-size: 20px;
   line-height: 24px;
 }
 
-.links-container {
+.profile__links {
   margin-top: 40px;
 }
 
-.info-link{
+.profile__link{
   display: flex;
   column-gap: 14px;
-  flex-wrap: wrap;
   align-items: center;
   margin-bottom: 20px;
 }
@@ -94,16 +114,24 @@ a {
   flex-direction: column;
   width: 100%;
 }
+
 .main__description{
   margin-top: 18px;
   max-width: 690px;
 }
 
-.main__inform{
+.main__full-inform{
   border: 1px #fff solid;
   flex-grow: 1;
   padding: 27px;
   margin-top: 33px;
+  position: relative;
+}
+
+.black-arrow{
+  position: absolute;
+  left: 56px;
+  top: -1px;
 }
 
 .inform-item{
@@ -112,7 +140,7 @@ a {
   column-gap: 72px;
 }
 
-.inform-item:not(:first-child){
+.inform-item:not(:first-of-type){
   border-top: 1px #fff solid;
 }
 
@@ -140,45 +168,55 @@ a {
 }
 
 @media (max-width: 768px) {
-  .logo{
+  .header{
     position: static;
     margin-bottom: 52px;
   }
-  .container{
+
+  .wrapper{
     flex-direction: column;
     font-size: 16px;
     line-height: 20px;
     padding: 23px 20px 60px;
   }
+
   .profile{
-    width: 100%;
+    margin: 0 auto;
   }
-  .info-block{
+
+  .about-block{
     height: auto;
     padding: 17px 24px;
   }
-  .info-block__name{
+
+  .about-block__name{
     font-size: 20px;
     line-height: 24px;
   }
-  .info-block__text{
+
+  .about-block__text{
     font-size: 16px;
     line-height: 20px;
   }
+
   .main__description{
     margin-top: 40px;
   }
+
   .main__inform{
     padding: 15px;
     margin-top: 25px;
   }
+
   .inform-item__title{
     width: auto;
     margin-bottom: 16px;
   }
+
   .inform-item{
     flex-direction: column;
   }
+  
   .skills{
     column-gap: 16px;
   }

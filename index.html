@@ -9,41 +9,44 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="logo">
-      <img src="./images/logo-1.png" alt="">
-      <img src="./images/logo-2.png" alt="">
-      <img src="./images/logo-3.png" alt="">
-    </div>
-    <div class="profile">
-      <div class="image-wrapper">
-
+  <div class="wrapper">
+    <header class="header">
+      <img src="./images/logo-1.png" alt="Лого">
+      <img src="./images/logo-2.png" alt="Лого">
+      <img src="./images/logo-3.png" alt="Лого">
+    </header>
+    
+    <section class="profile">
+      <div class="profile__image-wrapper">
+        <img src="./images/photo.jpg" class="profile-image" alt="Фото профиля" width="100%" height="100%">
+        <img src="./images/glasses.png" class="glasses" alt="Очки">
       </div>
-      <div class="info-block">
-        <h1 class="info-block__name">Зверков Никита</h1>
-        <p class="info-block__text">24 года, Воронеж</p>
-        <div class="links-container">
-          <a href="tel:+79800919756" class="info-link">
+      <div class="about-block">
+        <img src="./images/redArrow.svg" class="red-arrow" alt="стрелка">
+        <h1 class="about-block__name">Зверков Никита</h1>
+        <p class="about-block__text">24 года, Воронеж</p>
+        <div class="profile__links">
+          <a href="tel:+79800919756" class="profile__link">
             <img src="./images/phone.png" alt="Телефон" width="19px" height="19px">
-            <p class="info-block__text">+7 980 091 97 56</p>
+            <p class="about-block__text">+7 980 091 97 56</p>
           </a>
-          <a href="mailto:zverkovnikita09@gmail.com" class="info-link">
+          <a href="mailto:zverkovnikita09@gmail.com" class="profile__link">
             <img src="./images/mail.png" alt="Почта" width="20px" height="15px">
-            <p class="info-block__text">zverkovnikita09@gmail.com</p>
+            <p class="about-block__text">zverkovnikita09@gmail.com</p>
           </a>
-          <a href="" class="info-link">
+          <a href="https://t.me/Nikita_0998" class="profile__link">
             <img src="./images/tg.png" alt="Телеграм" width="23px" height="19px">
-            <p class="info-block__text">Телега</p>
+            <p class="about-block__text">Nikita_0998</p>
           </a>
-          <a href="https://github.com/zverkovnikita09" class="info-link">
+          <a href="https://github.com/zverkovnikita09" class="profile__link">
             <img src="./images/github.png" alt="Гитхаб" width="22px" height="21px">
-            <p class="info-block__text">github.com/zverkovnikita09</p>
+            <p class="about-block__text">github.com/zverkovnikita09</p>
           </a>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="main">
+    <section class="main">
       <p class="main__description">
         Привет! Я обладаю знаниями в HTML, CSS, JavaScript и фреймворках, таких как React и Angular. Я всегда стараюсь
         быть в курсе последних технологических тенденций и постоянно улучшать свои навыки. Люблю работать в команде
@@ -51,18 +54,20 @@
         и библиотеками, такими как Bootstrap, jQuery, Sass и другие. Я готов принять любой вызов и настроен
         на постоянное развитие в своей профессии
       </p>
-      <div class="main__inform">
+      <div class="main__full-inform">
+        <img src="./images/blackArrow.svg" class="black-arrow" alt="стрелка" width="60px" height="20px">
         <div class="inform-item">
           <h2 class="inform-item__title">Образование</h2>
-          <div class="text-block">
+          <div class="infort-item__text text-block">
             <p class="text-block__title">Воронежский Государственный Педагогический Университет</p>
-            <p class="text-block__text">Педагогическое образование с двумя профилями подготовки (Математика, Информатика)</p>
+            <p class="text-block__text">Педагогическое образование с двумя профилями подготовки (Математика,
+              Информатика)</p>
             <p class="text-block__text">2018-2023</p>
           </div>
         </div>
         <div class="inform-item">
           <h2 class="inform-item__title">Карьера</h2>
-          <div class="text-block">
+          <div class="infort-item__text text-block">
             <p class="text-block__title">АО Галерея Чижова</p>
             <p class="text-block__text">Frontend-разработчик</p>
             <p class="text-block__text">2022-2023</p>
@@ -70,7 +75,7 @@
         </div>
         <div class="inform-item">
           <h2 class="inform-item__title">Навыки</h2>
-          <div class="text-block skills">
+          <div class="infort-item__text text-block skills">
             <p>HTML</p>
             <p>CSS</p>
             <p>Javascript</p>
@@ -78,10 +83,12 @@
             <p>React</p>
             <p>Redux</p>
             <p>Next</p>
+            <p>Git</p>
+            <p>Webpack</p>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   </div>
 </body>
 
