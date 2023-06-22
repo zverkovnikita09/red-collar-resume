@@ -216,8 +216,13 @@ a {
   .inform-item{
     flex-direction: column;
   }
-  
+
   .skills{
     column-gap: 16px;
+  }
+
+  .black-arrow{
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
