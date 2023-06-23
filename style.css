@@ -1,5 +1,14 @@
 @import url(https://db.onlinewebfonts.com/c/f02cf2e6e27a17bcfe9efa18c041c208?family=Redcollar);
-@import url(https://fonts.cdnfonts.com/css/tt-commons);
+
+@font-face {
+  font-family: "Redcollar";
+  src: url("/fonts/redCollar.ttf"),
+}
+
+@font-face {
+  font-family: "TT Commons";
+  src: url("/fonts/ttCommons.woff2") format("woff2"),
+}
 
 * {
   margin: 0;
