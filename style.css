@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: "TTCommons";
-  src: url("/fonts/TTCommons-Regular.woff2");
+  src: url("./fonts/TTCommons-Regular.woff2");
 }
 
 * {
